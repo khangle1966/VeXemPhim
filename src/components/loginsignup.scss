@@ -1,0 +1,84 @@
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #ff6f61;
+    }
+}
+
+.login-form {
+    width: 700px;
+    margin: auto;
+    background-color: #141E30;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    .form-label {
+        color: #fff;
+    }
+
+    .form-control {
+        background-color: #243B55;
+        border: none;
+        color: #fff;
+        padding: 15px;
+        border-radius: 5px;
+
+
+        &:focus {
+            background-color: #1E2A38;
+            border: none;
+            box-shadow: none;
+            color: #fff;
+        }
+    }
+
+    .form-group {
+        width: 100%;
+    }
+
+    .btn-primary {
+        background-color: #ff6f61;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #ff4d4d;
+            border: none;
+        }
+    }
+
+    .btn-secondary {
+        background-color: #4A5568;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #2D3748;
+            border: none;
+        }
+    }
+
+    .after-login-message {
+        margin-top: 20px;
+        color: #ff6f61;
+        font-size: 1.2rem;
+    }
+}

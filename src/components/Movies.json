@@ -1,0 +1,20 @@
+[
+    {
+        "_id": "1",
+        "title": "Inception",
+        "description": "A thief who steals corporate secrets through the use of dream-sharing technology.",
+        "releaseDate": "2010-07-16"
+    },
+    {
+        "_id": "2",
+        "title": "The Dark Knight",
+        "description": "When the menace known as the Joker emerges, he wreaks havoc and chaos on the people of Gotham.",
+        "releaseDate": "2008-07-18"
+    },
+    {
+        "_id": "3",
+        "title": "Interstellar",
+        "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+        "releaseDate": "2014-11-07"
+    }
+]

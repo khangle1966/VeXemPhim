@@ -1,0 +1,137 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #f8f9fa;
+$border-radius: 10px;
+$input-height: 45px;
+$font-size: 16px;
+
+.admin-container {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 70%;
+
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.admin-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: $primary-color;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-group {
+    margin-bottom: 15px;
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.form-control {
+    height: $input-height;
+    font-size: $font-size;
+    border-radius: $border-radius;
+    transition: box-shadow 0.3s ease;
+
+    &:focus {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+}
+
+.btn-primary,
+.btn-secondary {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: $border-radius;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary {
+    background-color: $primary-color;
+    border: none;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+        transform: translateY(-3px);
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary-color;
+    border: none;
+    margin-top: 10px;
+
+    &:hover {
+        background-color: lighten($secondary-color, 10%);
+        transform: translateY(-3px);
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 15px;
+    }
+
+    .form-control {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+.admin-input-group {
+    position: relative;
+    margin-bottom: 20px;
+
+    .input-icon {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: $secondary-color;
+        font-size: 1.2rem;
+    }
+
+    input {
+        padding-left: 45px;
+    }
+}

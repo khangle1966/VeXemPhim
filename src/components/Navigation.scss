@@ -1,0 +1,47 @@
+.container {
+    background: linear-gradient(to right, #141E30, #243B55);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        color: #ff6f61 !important;
+        transform: scale(1.1);
+    }
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+p {
+    color: #fff;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.logout-link {
+    color: #ff6f61 !important;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        color: #fff !important;
+        transform: scale(1.1);
+    }
+}
+
+.popup-content {
+    background: #243B55;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

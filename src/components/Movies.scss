@@ -1,0 +1,112 @@
+.movies-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background: linear-gradient(to right, #141E30, #243B55);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-form {
+    align-self: flex-start;
+    /* Align the form to the left */
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+
+    .form-control {
+        width: calc(100% - 110px);
+        /* Adjust width to fit with the button */
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .btn {
+        width: 100px;
+        display: inline-block;
+    }
+}
+
+.movie-card {
+    margin: 10px;
+    width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+        height: 300px;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-body {
+        text-align: center;
+        background: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 20px;
+
+        h5 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .btn {
+            margin-top: 10px;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: #ff6f61;
+                border-color: #ff6f61;
+            }
+        }
+    }
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+
+    .page-button {
+        margin: 0 5px;
+        padding: 5px 10px;
+        font-size: 0.85rem;
+        border-radius: 5px;
+        background: #1f4455;
+        border: none;
+        color: #ffffff;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        width: 3rem;
+
+        &:hover {
+            background: #ff6f61;
+            color: white;
+        }
+    }
+}
+
+.alert-message {
+    position: fixed;
+    top: 10px;
+    z-index: 1050;
+    width: auto;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
