@@ -1,0 +1,10 @@
+/* Slider.css */
+
+.carousel-item img {
+    width: 100%;
+    /* Đảm bảo hình ảnh có chiều rộng 100% của khung chứa */
+    height: 50vh;
+    /* Set height to full viewport height */
+    object-fit: contain;
+    /* Giữ nguyên tỉ lệ gốc và đảm bảo hình ảnh không bị cắt xén */
+}
